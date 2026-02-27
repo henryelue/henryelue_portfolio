@@ -1,0 +1,33 @@
+
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+a:link {
+  color: red;
+  text-align: center;
+}
+
+
+a:visited {
+  color: green;
+  text-align: center;
+}
+
+
+a:hover {
+  color: hotpink;
+  text-align: center;
+}
+
+a:active {
+  color: blue;
+  text-align: center;
+}
