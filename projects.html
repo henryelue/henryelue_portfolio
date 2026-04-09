@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Henry Elue</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <!-- ── Navbar ── -->
+  <header>
+    <nav class="navbar container">
+      <div class="brand"><a href="index.html">Henry Elue</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Case Studies</a></li>
+        <li><a href="https://www.linkedin.com/in/elue" target="_blank" rel="noopener" class="btn-nav">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Page Header ── -->
+  <div class="projects-header">
+    <div class="container">
+      <p class="section-label">Portfolio</p>
+      <h1 class="section-title">Case Studies</h1>
+      <p class="section-sub" style="margin:0 auto;">
+        5 projects spanning 0→1 launches, growth strategy, viral design, and metric analysis. Each one shows how I think through a problem end-to-end.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── All Projects ── -->
+  <section class="section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- 1. YouTube RCA -->
+        <div class="card card-featured" id="youtube-rca">
+          <div class="card-featured-icon">📉</div>
+          <div>
+            <span class="card-status status-exercise">Exercise</span>
+            <p class="card-type">Root Cause Analysis · YouTube</p>
+            <h3>Average View Duration Drop on YouTube</h3>
+            <p>
+              <strong style="color:#93c5fd;">Problem:</strong> A <strong>30%</strong> drop in Average View Duration (AVD), a core engagement metric tied directly to revenue and creator monetization, needed to be diagnosed and resolved.<br><br>
+              <strong style="color:#93c5fd;">Approach:</strong> Applied a structured RCA framework: clarified scope with 7 targeted questions (onset, category breakdown, algorithm changes, ad load, Shorts vs long-form, regional differences), documented assumptions, then analysed data across user feedback, video analytics (CTR, retention), user behaviour, content trends, and competitor activity.<br><br>
+              <strong style="color:#93c5fd;">Root causes identified:</strong> Content quality decline, suboptimal algorithm recommendations, increased ad load, user shift to short-form (Shorts/TikTok), platform usability issues, and evolving viewer expectations.<br><br>
+              <strong style="color:#93c5fd;">Recommendations:</strong> Short-term: retune recommendation algorithm, A/B test ad placement, fix usability. Mid-term: lean into Shorts, incentivise quality creators. Long-term: exclusive content, interactive features (polls, Q&A, live streams). Defined AVD recovery rate and engagement rate as success metrics with iterative rollouts.
+            </p>
+            <div class="card-tags">
+              <span class="tag">YouTube</span>
+              <span class="tag">Root Cause Analysis</span>
+              <span class="tag">Metric Diagnosis</span>
+              <span class="tag">A/B Testing</span>
+              <span class="tag">Algorithm</span>
+              <span class="tag">Engagement</span>
+            </div>
+            <a href="https://docs.google.com/presentation/d/1YMJfN0c4XeSx-aDKcqSSP_O6VFBp8sYa0NXHOrry_qk/edit?slide=id.g3b00d599b50_2_75#slide=id.g3b00d599b50_2_75" target="_blank" rel="noopener" class="card-link">View presentation →</a>
+          </div>
+        </div>
+
+        <!-- 3. Audiomack Viral Loop -->
+        <div class="card" id="audiomack-viral">
+          <span class="card-status status-concept">Concept</span>
+          <p class="card-type">Growth Strategy · Dec 2025</p>
+          <h3>Designing a Viral Loop for Audiomack</h3>
+          <p>
+            <strong style="color:var(--navy);">Problem:</strong> Audiomack's engagement was centred on library size rather than community, which limited organic growth and long-term retention.<br><br>
+            <strong style="color:var(--navy);">Solution:</strong> Designed "Crew Charts", small listening groups where each Crew generates its own live music chart from member activity. The viral loop: listen, get prompted to invite friends, create or join a Crew, share the Crew Chart, new users onboard directly into a Crew. Shifted the product's emphasis from passive listening to community-driven music taste.<br><br>
+            <strong style="color:var(--navy);">Success metrics defined:</strong> % new users from Crew invites, active Crews per MAU, weekly listening hours per user, Crew Chart share frequency, and 4-week retention of Crew users vs non-Crew users.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Audiomack</span>
+            <span class="tag">Viral Loop</span>
+            <span class="tag">Growth</span>
+            <span class="tag">Retention</span>
+            <span class="tag">Community</span>
+          </div>
+          <a href="https://www.canva.com/design/DAG7OSqoxBc/Vaw3w2N5iuU1te4WmyoO9g/edit" target="_blank" rel="noopener" class="card-link">View presentation →</a>
+        </div>
+
+        <!-- 5. Nora AI -->
+        <div class="card card-featured" id="nora-ai">
+          <div class="card-featured-icon">🤱</div>
+          <div>
+            <span class="card-status status-shipped">Shipped · Live Product</span>
+            <p class="card-type">0→1 Product Launch · Emerj LLC (noramum.app)</p>
+            <h3>Nora: AI Companion for Pregnancy &amp; Motherhood</h3>
+            <p>
+              <strong style="color:#93c5fd;">Problem:</strong> Expecting and new mothers face anxiety, isolation, and information overload with no consistent, personalised support system. Most AI tools also aren't built with the safety constraints a health-adjacent product requires.<br><br>
+              <strong style="color:#93c5fd;">What I did:</strong> Led 0→1 product development of a mobile-first AI companion, defining product vision, conducting customer discovery, designing core features (AI chat, milestone tracking, personalised daily check-ins, memory timeline), and owning execution from concept to App Store &amp; Play Store launch.<br><br>
+              <strong style="color:#93c5fd;">AI Architecture:</strong> Built on <strong>OpenAI</strong> as the primary model with <strong>Gemini</strong> as a backup fallback, ensuring reliability and continuity if the primary model is unavailable. Backend powered by <strong>FastAPI</strong>; mobile app built in <strong>React Native</strong> for a single codebase across iOS and Android.<br><br>
+              <strong style="color:#93c5fd;">AI Safety &amp; Guardrails:</strong> Designed and enforced explicit safety constraints in the system prompt. Nora is hard-blocked from giving medical advice. All AI responses include contextual reminders that information should be discussed with a qualified healthcare provider. This was a deliberate product decision to manage liability, maintain user trust, and keep the product in a supportive companion role rather than a diagnostic one.<br><br>
+              <strong style="color:#93c5fd;">Outcome:</strong> Shipped a live B2C product used by expecting and new mothers. Improved onboarding completion by <strong>20%</strong> through optimised flows and experimentation; increased user engagement by <strong>15%</strong> by prioritising AI chat and milestone-based personalisation.
+            </p>
+            <div class="card-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">OpenAI + Gemini</span>
+              <span class="tag">AI Safety</span>
+              <span class="tag">0→1 Launch</span>
+              <span class="tag">iOS &amp; Android</span>
+              <span class="tag">B2C</span>
+            </div>
+            <a href="https://noramum.app/" target="_blank" rel="noopener" class="card-link">View live product →</a>
+          </div>
+        </div>
+
+        <!-- 6. CareerLantern -->
+        <div class="card card-featured" id="careerlantern">
+          <div class="card-featured-icon">🚀</div>
+          <div>
+            <span class="card-status status-shipped">Shipped · Live Product</span>
+            <p class="card-type">0→1 AI Product Build · careerlantern.henryelue.space</p>
+            <h3>CareerLantern: AI Career Platform</h3>
+            <p>
+              <strong style="color:#93c5fd;">Problem:</strong> Job seekers lack personalised, affordable tools for ATS-optimised resumes, realistic interview prep, and career transition planning. Generic templates and expensive coaching leave most users underserved.<br><br>
+              <strong style="color:#93c5fd;">What I built:</strong> Designed and shipped a full-stack AI career platform end-to-end: product strategy, architecture decisions, and feature delivery. 17 authenticated pages, 12 AI endpoints, and a complete auth system (JWT + Google/LinkedIn OAuth, bcrypt, rate limiting, CSRF protection).<br><br>
+              <strong style="color:#93c5fd;">AI Architecture:</strong> Initially deployed Llama 3.2 3B (self-hosted via Ollama, exposed through a Cloudflare Tunnel at a custom OpenAI-compatible endpoint), eliminating per-call API costs and maintaining full model control. Migrating to <strong>Gemini 2.5 Flash</strong> for improved output quality and reliability at scale. ElevenLabs <code>scribe_v1</code> handles speech-to-text for voice interview answers (60s audio → transcribed text via MediaRecorder). A global system prompt enforces precision, ATS optimisation, career-level calibration, and strict JSON output discipline across all AI features.<br><br>
+              <strong style="color:#93c5fd;">Key technical decisions:</strong> FastAPI + Uvicorn (async Python for AI workloads) → Next.js 15 App Router (SSR + TypeScript); PostgreSQL + Alembic migrations; DigitalOcean Spaces with private ACL + presigned URLs for resume file storage; APScheduler for daily follow-up reminder emails; Mixpanel + PostHog for dual product analytics and session replay.<br><br>
+              <strong style="color:#93c5fd;">Product pillars shipped:</strong> AI resume builder (CV import → LLM parse → structured JSON → pre-fill; 3 bullet rewrite styles; ATS/JD match score 0–100 with keyword gap analysis) · Voice mock interview coach (streaming AI feedback, sample improved answers, answer library for 8+ scored responses) · Career intelligence (skills gap analysis, alignment score, transferable skills map for career switchers) · Cover letter generator · LinkedIn headline + About optimizer · Job application tracker with status pipeline and follow-up reminders.
+            </p>
+            <div class="card-tags">
+              <span class="tag">LLM / Gemini 2.5 Flash</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Next.js 15</span>
+              <span class="tag">ElevenLabs STT</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">0→1</span>
+              <span class="tag">AI Product</span>
+              <span class="tag">Freemium</span>
+            </div>
+            <a href="https://careerlantern.henryelue.space" target="_blank" rel="noopener" class="card-link">View live product →</a>
+          </div>
+        </div>
+
+        <!-- 7. GroupInn -->
+        <div class="card card-featured" id="groupinn">
+          <div class="card-featured-icon">🏘️</div>
+          <div>
+            <span class="card-status status-concept">Concept · Figma Prototype</span>
+            <p class="card-type">Product Concept &amp; Design · Figma Prototype</p>
+            <h3>GroupInn — A Digital Home for Communities</h3>
+            <p>
+              <strong style="color:#93c5fd;">Problem:</strong> People want to connect around shared interests but existing platforms require sharing phone numbers or social media handles, which creates friction and privacy concerns that discourage genuine community formation.<br><br>
+              <strong style="color:#93c5fd;">What I did:</strong> Conceived and designed GroupInn from the ground up, defining the product vision, target users (clubs, cohorts, learning teams, associations, online communities), and core feature set. Designed four key pillars: Group Discovery (find communities by interest), Group Chat (real-time messaging), Recognition (highlight milestones and contributions), and Privacy Control (connect without exposing personal details). Built out the full concept in Figma, from user flows to high-fidelity screens.<br><br>
+              <strong style="color:#93c5fd;">Insight:</strong> People stay engaged with products when they find their people. GroupInn focuses on intentional, human connection, keeping interactions easy, safe, and organised without the complexity of mainstream social platforms.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Product Design</span>
+              <span class="tag">Community</span>
+              <span class="tag">Consumer</span>
+              <span class="tag">Privacy</span>
+              <span class="tag">Figma</span>
+              <span class="tag">0→1</span>
+            </div>
+            <a href="https://www.figma.com/design/QjZJo3sloNRaevukAjgPo4/GroupInn?node-id=0-1&p=f&t=jRRjXl1PKi4vmXRe-0" target="_blank" rel="noopener" class="card-link">View Figma prototype →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center;">
+      <p class="section-label">Get in touch</p>
+      <h2 class="section-title">Want to work together?</h2>
+      <p class="section-sub" style="margin:0 auto 32px;">
+        Open to PM roles, freelance product work, and conversations about interesting problems.
+      </p>
+      <a href="https://www.linkedin.com/in/elue" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Henry Elue</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="https://www.linkedin.com/in/elue" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Henry Elue. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

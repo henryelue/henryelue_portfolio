@@ -1,21 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henry Elue Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Henry Elue | Product Manager · AI, SaaS &amp; Mobile</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <style>
-body {
-  background-image: url('/images/background.jpg');
-}
-</style>
-    <h1>Welcome to my Portfolio</h1>
-    <a href="about.html">About</a>
-    <a href="www.linkedin.com/in/elue">linkedin</a>
-    <a href="projects.html">Projects</a>
+
+  <!-- ── Navbar ── -->
+  <header>
+    <nav class="navbar container">
+      <div class="brand"><a href="index.html">Henry Elue</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Case Studies</a></li>
+        <li><a href="https://www.linkedin.com/in/elue" target="_blank" rel="noopener" class="btn-nav">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Product Manager · AI, SaaS &amp; Mobile · 5+ Years</div>
+      <h1>Building AI products that<br><span>ship, scale, and deliver results</span></h1>
+      <p class="hero-sub">
+        I'm Henry Elue, a product manager with an engineering background. I build AI-powered products across SaaS, fintech, and telecom. Based in Ottawa, Canada.
+      </p>
+      <div class="hero-ctas">
+        <a href="projects.html" class="btn btn-primary">View Case Studies</a>
+        <a href="about.html" class="btn btn-outline">About Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <strong>5+</strong>
+          <span>Years in PM</span>
+        </div>
+        <div class="hero-meta-item">
+          <strong>+38%</strong>
+          <span>User Adoption</span>
+        </div>
+        <div class="hero-meta-item">
+          <strong>+20%</strong>
+          <span>Onboarding Conversion</span>
+        </div>
+        <div class="hero-meta-item">
+          <strong>−25%</strong>
+          <span>Issue Resolution Time</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Featured Work ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Featured Work</p>
+      <h2 class="section-title">Selected Case Studies</h2>
+      <p class="section-sub">A sample of how I approach product problems, from data analysis to strategy and execution.</p>
+
+      <div class="projects-grid">
+
+        <!-- CareerLantern — Featured -->
+        <div class="card card-featured">
+          <div class="card-featured-icon">🚀</div>
+          <div>
+            <span class="card-status status-shipped">Shipped · Live Product</span>
+            <p class="card-type">0→1 AI Product Build</p>
+            <h3>CareerLantern: AI Career Platform</h3>
+            <p>Designed and shipped a full-stack AI career platform end-to-end. 17 authenticated pages, 12 AI endpoints, full auth system (JWT + OAuth 2.0). Features: AI resume builder with ATS/JD match scoring, voice mock interview coach (ElevenLabs STT), career intelligence for switchers, and job application tracker. Built on FastAPI + Next.js 15, PostgreSQL, and Gemini 2.5 Flash.</p>
+            <div class="card-tags">
+              <span class="tag">Gemini 2.5 Flash</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Next.js 15</span>
+              <span class="tag">0→1</span>
+              <span class="tag">AI Product</span>
+            </div>
+            <a href="https://careerlantern.henryelue.space" target="_blank" rel="noopener" class="card-link">View live product →</a>
+          </div>
+        </div>
+
+        <!-- Nora AI -->
+        <div class="card">
+          <span class="card-status status-shipped">Shipped · Live Product</span>
+          <p class="card-type">0→1 Product Launch · noramum.app</p>
+          <h3>Nora: AI Companion for Pregnancy &amp; Motherhood</h3>
+          <p>Led 0→1 development of a mobile AI companion for expecting and new mothers, from product vision to App Store &amp; Play Store launch. Built on React Native, FastAPI, and OpenAI with Gemini fallback. Enforced medical AI safety guardrails by design. +20% onboarding completion, +15% engagement.</p>
+          <div class="card-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">OpenAI + Gemini</span>
+            <span class="tag">AI Safety</span>
+            <span class="tag">iOS &amp; Android</span>
+          </div>
+          <a href="projects.html#nora-ai" class="card-link">Read case study →</a>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="projects.html" class="btn btn-outline">See all 5 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Skills ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-label">Skills &amp; Tools</p>
+      <h2 class="section-title">How I work</h2>
+      <p class="section-sub">Technical and product competencies I bring to every team.</p>
+
+      <div class="skills-two-col">
+        <div class="skills-col">
+          <p class="skills-col-label">Technical &amp; AI</p>
+          <div class="skills-strip">
+            <span class="skill-tag skill-tag-blue">LLM Product Development</span>
+            <span class="skill-tag skill-tag-blue">AI/ML Systems</span>
+            <span class="skill-tag skill-tag-blue">API Design &amp; Integration</span>
+            <span class="skill-tag skill-tag-blue">Data Platform Architecture</span>
+            <span class="skill-tag skill-tag-blue">AI Safety &amp; Guardrails</span>
+            <span class="skill-tag skill-tag-blue">Model Evaluation &amp; Metrics</span>
+            <span class="skill-tag skill-tag-blue">Voice AI / STT</span>
+            <span class="skill-tag skill-tag-blue">Mobile (iOS / Android)</span>
+            <span class="skill-tag skill-tag-blue">SQL &amp; Data Analysis</span>
+            <span class="skill-tag skill-tag-blue">Agile / Scrum</span>
+          </div>
+        </div>
+        <div class="skills-col">
+          <p class="skills-col-label">Product Management</p>
+          <div class="skills-strip">
+            <span class="skill-tag">Product Discovery</span>
+            <span class="skill-tag">Roadmapping &amp; Prioritization</span>
+            <span class="skill-tag">A/B Testing &amp; Experimentation</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">PRD &amp; Use Case Writing</span>
+            <span class="skill-tag">Root Cause Analysis</span>
+            <span class="skill-tag">Growth Strategy</span>
+            <span class="skill-tag">Go-to-Market</span>
+            <span class="skill-tag">KPI &amp; Success Metrics</span>
+            <span class="skill-tag">Stakeholder Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Henry Elue</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="https://www.linkedin.com/in/elue" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Henry Elue. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
-</html> 
+</html>
