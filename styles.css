@@ -391,6 +391,39 @@ header {
   object-fit: cover;
   border: 3px solid var(--border);
   margin-bottom: 20px;
+  cursor: zoom-in;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.about-photo:hover {
+  border-color: var(--blue);
+  transform: scale(1.04);
+}
+
+/* ── Photo Lightbox ── */
+.photo-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(15,23,42,0.85);
+  backdrop-filter: blur(6px);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.photo-lightbox:target {
+  display: flex;
+}
+
+.photo-lightbox img {
+  max-width: min(480px, 90vw);
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  object-fit: cover;
+  cursor: default;
 }
 
 .about-name {
@@ -426,6 +459,200 @@ header {
 }
 
 .about-link:hover { color: var(--blue); }
+
+/* ── Availability Signal ── */
+.hero-availability {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 0 rgba(34,197,94,0.4);
+  animation: avail-pulse 2s ease-out infinite;
+}
+
+@keyframes avail-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+  70%  { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+/* ── Services ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: #c7d2fe;
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.service-card > p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-list li {
+  font-size: 0.83rem;
+  color: var(--muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.service-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Floating Reach Me ── */
+.reach-me-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 300;
+}
+
+.reach-me-float-btn {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 99px;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+  transition: opacity var(--transition), box-shadow var(--transition);
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+}
+
+.reach-me-float-btn::-webkit-details-marker { display: none; }
+.reach-me-float-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 28px rgba(37,99,235,0.5);
+}
+
+.reach-me-float:not([open]) .reach-me-float-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 99px;
+  border: 2px solid rgba(37,99,235,0.6);
+  animation: reach-pulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes reach-pulse {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  70%  { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.reach-me-float-card {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  right: 0;
+  width: 260px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: 0 8px 32px rgba(15,23,42,0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reach-me-float-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.reach-me-float-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--navy);
+  transition: color var(--transition);
+  word-break: break-all;
+}
+
+.reach-me-float-item:hover { color: var(--blue); }
+
+@media (max-width: 480px) {
+  .reach-me-float {
+    bottom: 20px;
+    right: 16px;
+  }
+  .reach-me-float-card {
+    width: calc(100vw - 32px);
+    right: 0;
+  }
+}
 
 .about-body h2 {
   font-size: 1.2rem;
