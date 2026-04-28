@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Henry Elue</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
 
@@ -29,7 +29,7 @@
         <!-- Sidebar -->
         <div class="about-sidebar">
           <a href="#photo-lightbox">
-            <img src="images/Henry pic.jpg" alt="Henry Elue" class="about-photo" />
+            <img src="images/henry-pic.jpg?v=2" alt="Henry Elue" class="about-photo" />
           </a>
           <p class="about-name">Henry Chiedu Elue</p>
           <p class="about-title">Product Manager</p>
@@ -71,7 +71,7 @@
 
           <h2>Background</h2>
           <p>
-            I've shipped two live AI products from scratch: CareerLantern, an AI career platform, and Nora, an AI companion for expecting mothers. In parallel, I've spent 5+ years as a PM at Bluewave and TELUS across telecom and AI products. Before product, I spent nearly 3 years building data platforms at Huawei as a software engineer. That means I can read a system architecture, challenge a technical tradeoff, and write a spec that doesn't need translation.
+            I've shipped two live AI products from scratch: CareerPally, an AI career platform, and Nora, an AI companion for expecting mothers. In parallel, I've spent 5+ years as a PM at Bluewave and TELUS across telecom and AI products. Before product, I spent nearly 3 years building data platforms at Huawei as a software engineer. That means I can read a system architecture, challenge a technical tradeoff, and write a spec that doesn't need translation.
           </p>
           <p>
             Across these roles, I've increased user adoption by 38%, improved onboarding conversion by 20%, and cut issue resolution time by 25%. I work closely with engineering on data platforms, analytics systems, and AI products, and I'm comfortable getting into the technical details when it matters.
@@ -167,20 +167,20 @@
             Before moving into product, I spent nearly 3 years as a software engineer at Huawei, building data and analytics platforms. That foundation directly shapes how I work with engineering today. I can read a system architecture, challenge a technical tradeoff, and write a spec that doesn't require translation.
           </p>
           <p>
-            In my own projects, I go further. CareerLantern, a live AI platform I designed and built, gives the clearest view of how I think technically as a PM:
+            In my own projects, I go further. CareerPally, a live AI platform I designed and built, gives the clearest view of how I think technically as a PM:
           </p>
           <div class="tech-depth-grid">
             <div class="tech-depth-item">
               <p class="tech-depth-title">LLM Selection &amp; Migration</p>
-              <p class="tech-depth-desc">Started with self-hosted Llama 3.2 3B via Ollama (zero per-call cost, full control). Migrating to Gemini 2.5 Flash for higher output quality and production reliability. It's a deliberate tradeoff between cost control and model capability as the product matures.</p>
+              <p class="tech-depth-desc">Started with self-hosted Llama 3.2 3B via Ollama (zero per-call cost, full control). Migrated to Gemini 2.5 Flash for higher output quality and production reliability at scale. A deliberate tradeoff: infrastructure overhead out, model capability in, as the product matured.</p>
             </div>
             <div class="tech-depth-item">
               <p class="tech-depth-title">AI Pipeline Architecture</p>
-              <p class="tech-depth-desc">Designed the full LLM pipeline: FastAPI → HTTPS → Cloudflare Tunnel → Ollama. CV parse pipeline: PDF/DOCX → text extraction → prompt (12k char cap) → structured JSON → frontend state. STT pipeline: MediaRecorder → ElevenLabs scribe_v1 → transcribed text.</p>
+              <p class="tech-depth-desc">Designed the full LLM pipeline: FastAPI → Gemini 2.5 Flash API (OpenAI-compatible endpoint). CV parse pipeline: PDF/DOCX → text extraction → prompt (12k char cap) → structured JSON → frontend state. STT pipeline: MediaRecorder → ElevenLabs scribe_v1 → transcribed text.</p>
             </div>
             <div class="tech-depth-item">
               <p class="tech-depth-title">AI Safety &amp; Guardrails</p>
-              <p class="tech-depth-desc">For Nora (health-adjacent AI), enforced hard system prompt constraints blocking medical advice, with mandatory "consult your doctor" reminders on all AI responses. That was a deliberate product decision balancing user trust, liability, and scope. For CareerLantern, defined output discipline rules (precision, ATS calibration, strict JSON) to ensure consistent, high-quality AI responses at scale.</p>
+              <p class="tech-depth-desc">For Nora (health-adjacent AI), enforced hard system prompt constraints blocking medical advice, with mandatory "consult your doctor" reminders on all AI responses. That was a deliberate product decision balancing user trust, liability, and scope. For CareerPally, defined output discipline rules (precision, ATS calibration, strict JSON) to ensure consistent, high-quality AI responses at scale.</p>
             </div>
             <div class="tech-depth-item">
               <p class="tech-depth-title">API Design</p>
@@ -188,7 +188,7 @@
             </div>
             <div class="tech-depth-item">
               <p class="tech-depth-title">Data &amp; Analytics</p>
-              <p class="tech-depth-desc">At Bluewave, defined KPIs and delivered reporting tools that reduced RCA time by 25%. At TELUS, used data analysis and experimentation to improve chatbot resolution rates. Built dual analytics instrumentation (Mixpanel + PostHog) with a unified wrapper in CareerLantern.</p>
+              <p class="tech-depth-desc">At Bluewave, defined KPIs and delivered reporting tools that reduced RCA time by 25%. At TELUS, used data analysis and experimentation to improve chatbot resolution rates. Built dual analytics instrumentation (Mixpanel + PostHog) with a unified wrapper in CareerPally.</p>
             </div>
             <div class="tech-depth-item">
               <p class="tech-depth-title">Infrastructure Decisions</p>
@@ -282,7 +282,7 @@
 
   <!-- ── Photo Lightbox ── -->
   <a href="#" class="photo-lightbox" id="photo-lightbox">
-    <img src="images/Henry pic.jpg" alt="Henry Elue" />
+    <img src="images/henry-pic.jpg?v=2" alt="Henry Elue" />
   </a>
 
   <!-- ── Floating Reach Me ── -->

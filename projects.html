@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies — Henry Elue</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
 
@@ -39,18 +39,18 @@
     <div class="container">
       <div class="projects-grid">
 
-        <!-- CareerLantern — Shipped -->
-        <div class="card card-featured" id="careerlantern">
+        <!-- CareerPally — Shipped -->
+        <div class="card card-featured" id="careerpally">
           <div class="card-featured-icon">🚀</div>
           <div>
             <span class="card-status status-shipped">Shipped · Live Product</span>
-            <p class="card-type">0→1 AI Product Build · careerlantern.henryelue.space</p>
-            <h3>CareerLantern: AI Career Platform</h3>
+            <p class="card-type">0→1 AI Product Build · careerpally.com</p>
+            <h3>CareerPally: AI Career Platform</h3>
             <p>
               <strong style="color:#93c5fd;">Problem:</strong> Job seekers lack personalised, affordable tools for ATS-optimised resumes, realistic interview prep, and career transition planning. Generic templates and expensive coaching leave most users underserved.<br><br>
               <strong style="color:#93c5fd;">What I built:</strong> Designed and shipped a full-stack AI career platform end-to-end: product strategy, architecture decisions, and feature delivery. 17 authenticated pages, 12 AI endpoints, and a complete auth system (JWT + Google/LinkedIn OAuth, bcrypt, rate limiting, CSRF protection).<br><br>
-              <strong style="color:#93c5fd;">AI Architecture:</strong> Initially deployed Llama 3.2 3B (self-hosted via Ollama, exposed through a Cloudflare Tunnel at a custom OpenAI-compatible endpoint), eliminating per-call API costs and maintaining full model control. Migrating to <strong>Gemini 2.5 Flash</strong> for improved output quality and reliability at scale. ElevenLabs <code>scribe_v1</code> handles speech-to-text for voice interview answers (60s audio → transcribed text via MediaRecorder). A global system prompt enforces precision, ATS optimisation, career-level calibration, and strict JSON output discipline across all AI features.<br><br>
-              <strong style="color:#93c5fd;">Key technical decisions:</strong> FastAPI + Uvicorn (async Python for AI workloads) → Next.js 15 App Router (SSR + TypeScript); PostgreSQL + Alembic migrations; DigitalOcean Spaces with private ACL + presigned URLs for resume file storage; APScheduler for daily follow-up reminder emails; Mixpanel + PostHog for dual product analytics and session replay.<br><br>
+              <strong style="color:#93c5fd;">AI Architecture:</strong> Initially deployed Llama 3.2 3B (self-hosted via Ollama, exposed through a Cloudflare Tunnel at a custom OpenAI-compatible endpoint), eliminating per-call API costs and maintaining full model control. Migrated to <strong>Gemini 2.5 Flash</strong> for improved output quality and reliability at scale. ElevenLabs <code>scribe_v1</code> handles speech-to-text for voice interview answers (60s audio → transcribed text via MediaRecorder). A global system prompt enforces precision, ATS optimisation, career-level calibration, and strict JSON output discipline across all AI features.<br><br>
+              <strong style="color:#93c5fd;">Key technical decisions:</strong> FastAPI + Uvicorn (async Python for AI workloads) → Next.js 15 App Router (SSR + TypeScript); PostgreSQL + Alembic migrations; DigitalOcean Spaces with private ACL + presigned URLs for resume file storage; APScheduler for scheduled background jobs; Mixpanel + PostHog for dual product analytics and session replay.<br><br>
               <strong style="color:#93c5fd;">Product pillars shipped:</strong> AI resume builder (CV import → LLM parse → structured JSON → pre-fill; 3 bullet rewrite styles; ATS/JD match score 0–100 with keyword gap analysis) · Voice mock interview coach (streaming AI feedback, sample improved answers, answer library for 8+ scored responses) · Career intelligence (skills gap analysis, alignment score, transferable skills map for career switchers) · Cover letter generator · LinkedIn headline + About optimizer · Job application tracker with status pipeline and follow-up reminders.
             </p>
             <div class="card-tags">
@@ -63,7 +63,7 @@
               <span class="tag">AI Product</span>
               <span class="tag">Freemium</span>
             </div>
-            <a href="https://careerlantern.henryelue.space" target="_blank" rel="noopener" class="card-link">View live product →</a>
+            <a href="https://careerpally.com" target="_blank" rel="noopener" class="card-link">View live product →</a>
           </div>
         </div>
 
