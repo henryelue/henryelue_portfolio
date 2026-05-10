@@ -1031,6 +1031,32 @@ footer {
 }
 
 /* ── Responsive ── */
+/* ── Case Studies Page: 2×2+1 ── */
+.projects-grid-cases {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects-grid-cases .card-featured {
+  grid-column: span 1;
+  flex-direction: column;
+}
+
+.projects-grid-cases > *:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 12px);
+}
+
+@media (max-width: 768px) {
+  .projects-grid-cases {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid-cases > *:last-child {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .card-featured {
     grid-column: span 1;
